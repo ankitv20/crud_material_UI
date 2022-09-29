@@ -1,0 +1,47 @@
+<h1>Add Employee Details</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="employeeForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Employee Name</mat-label>
+      <input matInput formControlName="empName" placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Employee Category</mat-label>
+      <mat-select formControlName="empCategory" placeholder="Category">
+        <mat-option value="Junior">Junior </mat-option>
+        <mat-option value="Senior">Senior </mat-option>
+        <mat-option value="Manager">Manager </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Date of joining</mat-label>
+      <input matInput formControlName="joinDate" [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <label id="example-radio-group-label">
+      <h3>Gender</h3>
+    </label>
+    <mat-radio-group formControlName="gender" aria-labelledby="example-radio-group-label" class="example-radio-group">
+      <mat-radio-button class="example-radio-button" *ngFor="let gender of genderList" [value]="gender" >
+        {{gender}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Salary</mat-label>
+      <input matInput formControlName="salary" type="number" placeholder="Salary">
+    </mat-form-field>
+  </form>
+
+</div>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+  <button mat-raised-button color="warn" mat-dialog-close id="cancel">Cancel</button>
+
+</div>

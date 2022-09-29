@@ -1,0 +1,54 @@
+{
+  "empList": [
+    {
+      "empName": "Ankit",
+      "empCategory": "Senior",
+      "joinDate": "2022-09-05T18:30:00.000Z",
+      "gender": "Male",
+      "salary": 20000,
+      "id": 1
+    },
+    {
+      "empName": "Pankaj",
+      "empCategory": "Junior",
+      "joinDate": "2022-09-15T18:30:00.000Z",
+      "gender": "Male",
+      "salary": 10000,
+      "id": 2
+    },
+    {
+      "empName": "Akash",
+      "empCategory": "Manager",
+      "joinDate": "2022-06-15T18:30:00.000Z",
+      "gender": "Male",
+      "salary": 50000,
+      "id": 3
+    },
+    {
+      "empName": "Varun ",
+      "empCategory": "Senior",
+      "joinDate": "2022-09-01T18:30:00.000Z",
+      "gender": "Male",
+      "salary": 35000,
+      "id": 4
+    },
+    {
+      "empName": "Simran",
+      "empCategory": "Junior",
+      "joinDate": "2022-09-15T18:30:00.000Z",
+      "gender": "Male",
+      "salary": 15000,
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
